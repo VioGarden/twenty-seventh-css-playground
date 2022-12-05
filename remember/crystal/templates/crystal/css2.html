@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <script type="text/javascript" src="{% static 'js/css2.js' %}" defer></script>
+    <link rel="stylesheet" type="text/css" href={% static 'css/css2.css' %}>
+    <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Violet Evergarden</h3>
+          <h4 class="card-subtitle"></h4>
+        </div>
+        <i class="fa-solid fa-hat-witch card-icon"></i>
+    </div>
+    
+    {% endblock %}
+</body>
+</html>

@@ -8,3 +8,6 @@ def quick_home(request):
 
 def css1(request):
     return render(request, 'crystal/css1.html', {})
+
+def css2(request):
+    return render(request, 'crystal/css2.html', {})
